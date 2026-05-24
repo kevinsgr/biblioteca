@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 460" role="img" aria-labelledby="title desc">
+  <title id="title">Estanteria de biblioteca</title>
+  <desc id="desc">Libros organizados en una estanteria con una mesa de lectura.</desc>
+  <rect width="720" height="460" fill="#f8fbfa"/>
+  <rect x="78" y="78" width="564" height="300" rx="18" fill="#dfe9e6"/>
+  <rect x="108" y="112" width="504" height="222" rx="10" fill="#ffffff"/>
+  <rect x="130" y="314" width="460" height="18" rx="9" fill="#b7c7c3"/>
+  <rect x="136" y="142" width="32" height="170" rx="6" fill="#0f766e"/>
+  <rect x="178" y="170" width="28" height="142" rx="6" fill="#d65a4a"/>
+  <rect x="216" y="128" width="38" height="184" rx="6" fill="#c38a1c"/>
+  <rect x="266" y="156" width="30" height="156" rx="6" fill="#172126"/>
+  <rect x="306" y="136" width="34" height="176" rx="6" fill="#4f8f86"/>
+  <rect x="354" y="186" width="120" height="126" rx="8" fill="#eef5f3"/>
+  <path d="M378 214h72v10h-72zM378 238h72v10h-72zM378 262h52v10h-52z" fill="#8ca19b"/>
+  <rect x="492" y="148" width="34" height="164" rx="6" fill="#d65a4a"/>
+  <rect x="536" y="122" width="28" height="190" rx="6" fill="#0f766e"/>
+  <rect x="574" y="174" width="28" height="138" rx="6" fill="#c38a1c"/>
+  <path d="M172 362h376c28 0 52 23 52 52H120c0-29 23-52 52-52z" fill="#172126"/>
+  <rect x="244" y="346" width="232" height="28" rx="14" fill="#ffffff"/>
+  <circle cx="248" cy="217" r="16" fill="#ffffff" opacity=".45"/>
+  <circle cx="562" cy="232" r="18" fill="#ffffff" opacity=".45"/>
+</svg>

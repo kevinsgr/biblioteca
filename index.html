@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BiblioGestor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#">
+      <span class="brand-mark">B</span>
+      <span>BiblioGestor</span>
+    </a>
+    <nav class="nav">
+      <a href="#catalogo">Catalogo</a>
+      <a href="#prestamos">Prestamos</a>
+      <a href="#video">Video</a>
+      <a href="#registro">Registro</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <p class="eyebrow">Sistema de gestion de biblioteca</p>
+        <h1>Organiza libros, usuarios y prestamos en un solo lugar.</h1>
+        <p class="hero-copy">
+          Una interfaz clara para consultar disponibilidad, registrar nuevos libros y controlar prestamos activos.
+        </p>
+        <div class="hero-actions">
+          <a class="button primary" href="#registro">Registrar libro</a>
+          <a class="button secondary" href="#catalogo">Ver catalogo</a>
+        </div>
+      </div>
+
+      <div class="hero-panel">
+        <img class="hero-visual" src="assets/library-shelf.svg" alt="Estanteria con libros organizados">
+        <div class="metric">
+          <span id="totalLibros">0</span>
+          <small>Libros</small>
+        </div>
+        <div class="metric">
+          <span id="disponibles">0</span>
+          <small>Disponibles</small>
+        </div>
+        <div class="metric">
+          <span id="prestados">0</span>
+          <small>Prestados</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="video">
+      <div class="video-copy">
+        <p class="eyebrow">Presentacion</p>
+        <h2>Video explicativo</h2>
+        <p>
+          funcionamiento de la pagina.
+        </p>
+      </div>
+      <div class="video-link-box">
+        <span class="video-label">Link del video</span>
+        <a class="video-link" href="#" target="_blank" rel="noopener">
+          Pega aqui el enlace de tu video
+        </a>
+        
+          
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="catalogo">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Catalogo</p>
+          <h2>Libros registrados</h2>
+        </div>
+        <label class="search">
+          <span>Buscar</span>
+          <input id="busqueda" type="search" placeholder="Titulo, autor o categoria">
+        </label>
+      </div>
+      <div class="book-grid" id="listaLibros"></div>
+    </section>
+
+    <section class="split-section" id="prestamos">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">Control</p>
+          <h2>Prestamos activos</h2>
+        </div>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Usuario</th>
+              <th>Libro</th>
+              <th>Fecha limite</th>
+              <th>Estado</th>
+            </tr>
+          </thead>
+          <tbody id="tablaPrestamos"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="form-section" id="registro">
+      <div class="form-copy">
+        <p class="eyebrow">Registro</p>
+        <h2>Agregar un nuevo libro</h2>
+        <p>Completa los datos basicos para sumar un libro al catalogo.</p>
+      </div>
+
+      <form id="formLibro" class="book-form">
+        <label>
+          Titulo
+          <input name="titulo" type="text" placeholder="Ej. Cien anos de soledad" required>
+        </label>
+        <label>
+          Autor
+          <input name="autor" type="text" placeholder="Ej. Gabriel Garcia Marquez" required>
+        </label>
+        <label>
+          Categoria
+          <select name="categoria" required>
+            <option value="">Seleccionar</option>
+            <option>Novela</option>
+            <option>Ciencia</option>
+            <option>Historia</option>
+            <option>Tecnologia</option>
+            <option>Infantil</option>
+          </select>
+        </label>
+        <label>
+          Cantidad
+          <input name="cantidad" type="number" min="1" value="1" required>
+        </label>
+        <button class="button primary" type="submit">Guardar libro</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>BiblioGestor</span>
+    <span>Gestion simple para bibliotecas pequenas.</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
